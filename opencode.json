@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "experimental": {
+    "mcp_timeout": 120000
+  },
+
+  "mcp": {
+    "laravel-boost": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "php",
+        "artisan",
+        "boost:mcp"
+      ],
+      "timeout": 120000
+    }
+  },
+
+  "lsp": {
+    "php": {
+      "command": [
+        "intelephense",
+        "--stdio"
+      ],
+      "extensions": [
+        "php"
+      ],
+      "disabled": false
+    }
+  }
+}
